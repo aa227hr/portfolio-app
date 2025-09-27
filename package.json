@@ -1,7 +1,7 @@
 {
   "name": "portfolio-app",
   "type": "module",
-  "homepage": "https://alhusseinalahmed.github.io/portfolio-app",
+  "homepage": "https://aa227hr.github.io/portfolio-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
