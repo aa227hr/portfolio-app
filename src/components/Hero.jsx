@@ -68,7 +68,7 @@ const Hero = ({ scrollToSection }) => {
           <div className="hero-image">
             <div className="profile-image-container">
               <img
-                src="/images/profile.jpg"
+                src={`${import.meta.env.BASE_URL}images/profile.jpg`}
                 className="profile-image"
                 alt="Al Hussein Al Ahmed"
               />
