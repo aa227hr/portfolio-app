@@ -5,7 +5,7 @@ export const portfolioData = {
   email: "alhusseinalahmed@gmail.com",
   phone: "", // Consider adding a phone number if comfortable
   location: "Växjö, Sweden",
-  linkedin: "https://www.linkedin.com/in/al-hussein-al-ahmed-853b65267/",
+  linkedin: "https://www.linkedin.com/in/alhusseinalahmed/",
   github: "https://github.com/alhusseinalahmed",
 
   // About Section

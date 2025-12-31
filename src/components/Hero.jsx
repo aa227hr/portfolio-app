@@ -75,11 +75,6 @@ const Hero = ({ scrollToSection }) => {
             </div>
           </div>{" "}
         </div>
-
-        <div className="scroll-indicator">
-          <span>Scroll Down</span>
-          <div className="arrow"></div>
-        </div>
       </div>
     </section>
   );

@@ -1,53 +1,55 @@
-import { portfolioData } from '../data/portfolioData';
+import { portfolioData } from "../data/portfolioData";
 
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
         <h2 className="section-title">About Me</h2>
-        
+
         <div className="about-content">
           <div className="about-text">
             <div className="about-intro">
               <p>{portfolioData.about}</p>
             </div>
-            
+
             <div className="about-details">
               <div className="detail-item">
                 <h4>📍 Location</h4>
                 <p>{portfolioData.location}</p>
               </div>
-              
+
               <div className="detail-item">
                 <h4>🎓 Education</h4>
                 <p>{portfolioData.education[0].degree}</p>
-                <p className="detail-meta">{portfolioData.education[0].institution}</p>
+                <p className="detail-meta">
+                  {portfolioData.education[0].institution}
+                </p>
               </div>
-              
+
               <div className="detail-item">
                 <h4>💼 Status</h4>
                 <p>Open to opportunities</p>
                 <p className="detail-meta">Part-time & Internships</p>
               </div>
-              
+
               <div className="detail-item">
                 <h4>🚀 Interests</h4>
                 <p>Full-Stack Development, Game Dev, AI</p>
               </div>
             </div>
           </div>
-          
+
           <div className="about-skills-preview">
             <h3>Tech I Enjoy Working With</h3>
             <div className="skills-tags">
-              {Object.values(portfolioData.skills).flat().slice(0, 8).map((skill, index) => (
-                <span key={index} className="skill-tag">{skill}</span>
-              ))}
-            </div>
-            
-            <div className="fun-fact">
-              <h4>🎯 Current Focus</h4>
-              <p>Building responsive web applications while deepening my knowledge in software architecture and cloud technologies.</p>
+              {Object.values(portfolioData.skills)
+                .flat()
+                .slice(0, 8)
+                .map((skill, index) => (
+                  <span key={index} className="skill-tag">
+                    {skill}
+                  </span>
+                ))}
             </div>
           </div>
         </div>

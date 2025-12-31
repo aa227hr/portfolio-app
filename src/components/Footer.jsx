@@ -48,7 +48,7 @@ const Footer = () => {
               <p>
                 &copy; {currentYear} {portfolioData.name}. All rights reserved.
               </p>
-              <p>Built with React & ❤️</p>
+              <p>Built with React & AI</p>
             </div>
 
             <div className="footer-back-to-top">
