@@ -5,7 +5,7 @@ export const portfolioData = {
   email: "alhusseinalahmed@gmail.com",
   phone: "", // Consider adding a phone number if comfortable
   location: "Växjö, Sweden",
-  linkedin: "https://www.linkedin.com/in/al-hussein-al-ahmed-853b65267/",
+  linkedin: "https://www.linkedin.com/in/alhusseinalahmed/",
   github: "https://github.com/alhusseinalahmed",
 
   // About Section
@@ -58,16 +58,50 @@ export const portfolioData = {
       technologies: ["C#", "Unity", "Photon"],
       demoLink: "https://youtu.be/WXrrmhJMJf4",
       codeLink: "https://github.com/alhusseinalahmed/Rapid-Reload",
-      image: "/images/project1.png",
+      image: "images/game_project.png",
+      category: "Game Development",
+      status: "Completed",
+      featured: true,
+
     },
     {
-      title: "Personal Portfolio Website",
+      title: "Weather App using Flutter",
       description:
-        "A responsive React-based portfolio website showcasing projects and skills. Features modern design, smooth animations, and optimized performance.",
-      technologies: ["React", "JavaScript", "CSS3", "Vite"],
+        "A Flutter-based weather application that fetches real-time weather data from an API and displays it in a user-friendly interface.",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "API",
+        "OpenWeatherAPI",
+        "Android Studio",
+      ],
       demoLink: "https://github.com/aa227hr/weather_app",
       codeLink: "https://github.com/aa227hr/weather_app",
-      image: "/images/project2.jpg",
+      category: "Mobile Development",
+      status: "Completed",
+      featured: true,
+      image: "images/weather.jpg",
+    },
+    {
+      title: "Cloud Notes App",
+      description:
+        "A secure, full-stack note-taking application featuring JWT authentication, real-time cloud synchronization with TiDB, and a responsive masonry layout. Built with a decoupled architecture using Spring Boot and React.",
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "React.js",
+        "MySQL (TiDB)",
+        "Docker",
+        "JWT",
+        "Render",
+        "Vercel",
+      ],
+      demoLink: "https://notesapp-2025.vercel.app/login", // Replace with your actual Vercel link
+      codeLink: "https://github.com/alhusseinalahmed/notesapp_2025",
+      category: "Full-Stack",
+      status: "Completed",
+      featured: true,
+      image: "images/notes_app.jpg",
     },
   ],
 };

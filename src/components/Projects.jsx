@@ -14,39 +14,12 @@ const Projects = () => {
   ];
 
   // Enhanced project data with categories and images
-  const projects = [
-    {
-      ...portfolioData.projects[0],
-      category: "Game Development",
-      status: "Completed",
-      featured: true,
-      // You can add actual image paths later
-      image: "/images/project-fps.jpg",
-    },
-    {
-      title: "Weather App using Flutter",
-      description:
-        "A Flutter-based weather application that fetches real-time weather data from an API and displays it in a user-friendly interface.",
-      technologies: [
-        "Flutter",
-        "Dart",
-        "API",
-        "OpenWeatherAPI",
-        "Android Studio",
-      ],
-      demoLink: "https://github.com/aa227hr/weather_app",
-      codeLink: "https://github.com/aa227hr/weather_app",
-      category: "Mobile Development",
-      status: "Completed",
-      featured: true,
-      image: "/images/project-weather.jpg",
-    },
-  ];
-
   const filteredProjects =
     activeFilter === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeFilter);
+      ? portfolioData.projects
+      : portfolioData.projects.filter(
+          (project) => project.category === activeFilter
+        );
 
   const getStatusColor = (status) => {
     switch (status) {
@@ -93,13 +66,7 @@ const Projects = () => {
             >
               <div className="project-image">
                 <div className="project-image-placeholder">
-                  <div className="project-tech-icons">
-                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-icon">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                  <img src={project.image} alt="projectImg" />
                 </div>
                 <div className="project-overlay">
                   <div className="project-actions">

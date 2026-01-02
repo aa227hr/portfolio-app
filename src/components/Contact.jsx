@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { portfolioData } from "../data/portfolioData";
 import { useForm, ValidationError } from "@formspree/react";
 
